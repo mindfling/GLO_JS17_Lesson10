@@ -30,7 +30,6 @@ const adv = document.querySelector('.adv');
 adv.remove();
 
 
-
 // * 5) Восстановить порядок глав во 2й второй и 5й пятой книге
 
 // * выставим главы Книги 2
@@ -53,7 +52,7 @@ ul.append(li[9]);
 ul.append(li[2]);
 ul.append(li[10]);
 
-//выставим главы книги номер 5
+// * выставим главы Книги 5
 //это элемент 0 в HTML коллекции
 mybook = book[5];
 ul = mybook.querySelector('ul');
@@ -73,13 +72,8 @@ ul.prepend(li[1]);
 
 // * 6) в шестой книге добавить главу “Глава 8: За пределами ES6” 
 // * и поставить её в правильное место
-console.log('mybook: ', mybook);
 mybook = book[2]; //Книга 6
-console.log('mybook: ', mybook);
-console.log('mybook: ', mybook);
-console.log('mybook: ', mybook);
-
-console.log('mybook: ', mybook);
+console.log('Книга 6 mybook: ', mybook);
 
 const newChapter = document.createElement('li');
 newChapter.textContent = 'Глава 8: За пределами ES6';
@@ -87,8 +81,6 @@ console.log('newgnewChapterlnewChapter', newChapter);
 
 ul = mybook.querySelector('ul');
 li = mybook.querySelectorAll('li');
-console.log('mybook: ', mybook);
-console.log('li: ', li);
 
 ul.append(newChapter);
 ul.append(li[9]);
